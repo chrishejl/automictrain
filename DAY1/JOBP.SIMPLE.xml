@@ -11,7 +11,7 @@
          <auto_deactivation>F</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
          <ert>73</ert>
-         <workflow_children>11</workflow_children>
+         <workflow_children>12</workflow_children>
          <last_runtimes>PAAAADwAAAA8AAAAPAAAADwAAAA9AAAAPAAAABsAAAAaAAAAywAAAB4AAAAfAAAAFAAAABQAAAATAAAACwAAAAoAAABpAAAACgAAAA4AAAALAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
@@ -28,94 +28,6 @@
       </row>
    </workflow_attributes>
    <workflow_definitions>
-      <row>
-         <active>1</active>
-         <childflags>0000000000000000</childflags>
-         <column>3</column>
-         <line_number>7</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>JOBS.UNIX.ECHO</object_name>
-         <object_type>JOBS</object_type>
-         <predecessors>2</predecessors>
-         <rollback_enabled>1</rollback_enabled>
-         <row>3</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
-      <row>
-         <childflags>0000000000000000</childflags>
-         <column>4</column>
-         <line_number>8</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>JOBP.SIMPLE.DUPLICATE</object_name>
-         <object_type>JOBP</object_type>
-         <predecessors>1</predecessors>
-         <rollback_enabled>1</rollback_enabled>
-         <row>3</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
-      <row>
-         <active>1</active>
-         <childflags>0000000000000000</childflags>
-         <column>4</column>
-         <line_number>9</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>JOBS.UNIX.SLEEP</object_name>
-         <object_type>JOBS</object_type>
-         <predecessors>3</predecessors>
-         <rollback_enabled>1</rollback_enabled>
-         <row>2</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
-      <row>
-         <active>1</active>
-         <childflags>0000000000000000</childflags>
-         <column>5</column>
-         <line_number>10</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>JOBS.UNIX.SLEEP</object_name>
-         <object_type>JOBS</object_type>
-         <predecessors>2</predecessors>
-         <rollback_enabled>1</rollback_enabled>
-         <row>3</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
-      <row>
-         <active>1</active>
-         <childflags>0000000000000000</childflags>
-         <column>6</column>
-         <line_number>11</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>END</object_name>
-         <object_type><![CDATA[<END>]]></object_type>
-         <predecessors>1</predecessors>
-         <row>2</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
-      <row>
-         <active>1</active>
-         <childflags>0000000000000000</childflags>
-         <column>1</column>
-         <line_number>1</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>START</object_name>
-         <object_type><![CDATA[<START>]]></object_type>
-         <row>2</row>
-         <precondition_error_action>S</precondition_error_action>
-      </row>
-      <row>
-         <active>1</active>
-         <childflags>0100000000000000</childflags>
-         <column>2</column>
-         <line_number>2</line_number>
-         <mrt_time>000000</mrt_time>
-         <object_name>JOBS.UNIX.ECHO</object_name>
-         <object_type>JOBS</object_type>
-         <predecessors>1</predecessors>
-         <has_preconditions>1</has_preconditions>
-         <rollback_enabled>1</rollback_enabled>
-         <row>2</row>
-         <precondition_error_action>H</precondition_error_action>
-      </row>
       <row>
          <active>1</active>
          <childflags>0110000000000000</childflags>
@@ -159,6 +71,82 @@
          <precondition_error_action>H</precondition_error_action>
       </row>
       <row>
+         <childflags>0000000000000000</childflags>
+         <column>4</column>
+         <line_number>8</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBP.SIMPLE.DUPLICATE</object_name>
+         <object_type>JOBP</object_type>
+         <predecessors>1</predecessors>
+         <rollback_enabled>1</rollback_enabled>
+         <row>3</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0000000000000000</childflags>
+         <column>4</column>
+         <line_number>9</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.SLEEP</object_name>
+         <object_type>JOBS</object_type>
+         <predecessors>3</predecessors>
+         <rollback_enabled>1</rollback_enabled>
+         <row>2</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <childflags>0000000000000000</childflags>
+         <column>3</column>
+         <line_number>10</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.ERROR</object_name>
+         <object_type>JOBS</object_type>
+         <predecessors>1</predecessors>
+         <rollback_enabled>1</rollback_enabled>
+         <row>4</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0000000000000000</childflags>
+         <column>5</column>
+         <line_number>11</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.SLEEP</object_name>
+         <object_type>JOBS</object_type>
+         <predecessors>3</predecessors>
+         <rollback_enabled>1</rollback_enabled>
+         <row>3</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0000000000000000</childflags>
+         <column>6</column>
+         <line_number>12</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>END</object_name>
+         <object_type><![CDATA[<END>]]></object_type>
+         <predecessors>1</predecessors>
+         <row>2</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0100000000000000</childflags>
+         <column>2</column>
+         <line_number>2</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.ECHO</object_name>
+         <object_type>JOBS</object_type>
+         <predecessors>1</predecessors>
+         <has_preconditions>1</has_preconditions>
+         <rollback_enabled>1</rollback_enabled>
+         <row>2</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
          <active>1</active>
          <alias>STEP1</alias>
          <childflags>0000000000000000</childflags>
@@ -168,6 +156,30 @@
          <object_name>JOBS.UNIX.WITH_BACKUP</object_name>
          <object_type>JOBS</object_type>
          <predecessors>1</predecessors>
+         <row>3</row>
+         <precondition_error_action>H</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0000000000000000</childflags>
+         <column>1</column>
+         <line_number>1</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>START</object_name>
+         <object_type><![CDATA[<START>]]></object_type>
+         <row>2</row>
+         <precondition_error_action>S</precondition_error_action>
+      </row>
+      <row>
+         <active>1</active>
+         <childflags>0000000000000000</childflags>
+         <column>3</column>
+         <line_number>7</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.ECHO</object_name>
+         <object_type>JOBS</object_type>
+         <predecessors>2</predecessors>
+         <rollback_enabled>1</rollback_enabled>
          <row>3</row>
          <precondition_error_action>H</precondition_error_action>
       </row>
@@ -248,19 +260,31 @@
       <row>
          <workflow_line_number>10</workflow_line_number>
          <line_number>1</line_number>
+         <predecessor_line_number>6</predecessor_line_number>
+         <ok_status>ANY_OK</ok_status>
+      </row>
+      <row>
+         <workflow_line_number>11</workflow_line_number>
+         <line_number>1</line_number>
          <predecessor_line_number>9</predecessor_line_number>
          <ok_status>ANY_OK</ok_status>
       </row>
       <row>
-         <workflow_line_number>10</workflow_line_number>
+         <workflow_line_number>11</workflow_line_number>
          <line_number>2</line_number>
          <predecessor_line_number>8</predecessor_line_number>
          <ok_status>ANY_OK</ok_status>
       </row>
       <row>
          <workflow_line_number>11</workflow_line_number>
-         <line_number>1</line_number>
+         <line_number>3</line_number>
          <predecessor_line_number>10</predecessor_line_number>
+         <ok_status>ANY_OK</ok_status>
+      </row>
+      <row>
+         <workflow_line_number>12</workflow_line_number>
+         <line_number>1</line_number>
+         <predecessor_line_number>11</predecessor_line_number>
          <ok_status>ANY_OK</ok_status>
       </row>
    </line_conditions>
