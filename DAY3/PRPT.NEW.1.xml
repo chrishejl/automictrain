@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prpt>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>PRPT.NEW.1</name>
+         <type>PRPT</type>
+         <queue>CLIENT_QUEUE</queue>
+         <versioning_id>-908933264</versioning_id>
+      </row>
+   </general_attributes>
+   <gui_description>
+      <row>
+         <xui><![CDATA[<dialog height="506" icon="PRPT" id="PRPTS" left="279" top="4" width="420"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="PRPT"><properties><entry name="text">PRPT</entry><entry name="modifiable">0</entry></properties></readpanel></dialog>]]></xui>
+      </row>
+   </gui_description>
+   <elements>
+      <row>
+         <line_number>1</line_number>
+         <allow_multiselect>1</allow_multiselect>
+         <name>CHECKBOX1#</name>
+         <reference>UC_AGENT_ASSIGNMENT</reference>
+         <reference_type>VARA</reference_type>
+         <separator>;</separator>
+         <xui><![CDATA[<dyncheckgroup customfield="" enabled="1" fill="b" focus="0" haslist="0" id="CHECKBOX1s.00" modifiable="1" multiselect="1" nl="1" quotes="" reference="UC_AGENT_ASSIGNMENT" required="0" separator=";" text="Checkbox" tooltip="" xmlkey="" xmlpath=""><properties><entry listparam="C" name="reference">UC_AGENT_ASSIGNMENT</entry><entry name="text">Checkbox</entry><entry alias="multiselect" name="cgmultiselect">1</entry><entry alias="separator" name="cgseparator">;</entry><entry alias="haslist" name="cghaslist">0</entry><entry name="quotes"/><entry name="id">CHECKBOX1s.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip"/><entry name="customfield"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="modifiable">1</entry><entry name="required">0</entry></properties><onchange><command request="_internal" target="COMBOBOX1s.00" targetaction="onChangeReset" targetparam=""/></onchange></dyncheckgroup>]]></xui>
+         <ui_type>dyncheckgroup</ui_type>
+      </row>
+      <row>
+         <line_number>2</line_number>
+         <name>COMBOBOX1#</name>
+         <reference>VARA.FILELIST.NEW.1</reference>
+         <reference_type>VARA</reference_type>
+         <xui><![CDATA[<combo customfield="" dynamic="0" enabled="1" fill="b" focus="0" id="COMBOBOX1s.00" modifiable="1" nl="1" quotes="" reference="VARA.FILELIST.NEW.1" text="Combobox" tooltip="" xmlkey="" xmlpath=""><properties><entry listparam="C" name="reference">VARA.FILELIST.NEW.1</entry><entry name="text">Combobox</entry><entry name="quotes"/><entry name="id">COMBOBOX1s.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip"/><entry name="dynamic">0</entry><entry name="customfield"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="modifiable">1</entry></properties></combo>]]></xui>
+         <ui_type>combo</ui_type>
+      </row>
+   </elements>
+</prpt>

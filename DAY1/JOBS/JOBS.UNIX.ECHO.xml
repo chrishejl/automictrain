@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>N</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>1</ert>
+         <platform>UNIX</platform>
+         <last_runtimes>AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAA==</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>JOBS.UNIX.ECHO</name>
+         <type>JOBS</type>
+         <has_object_variables>1</has_object_variables>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>CLIENT_QUEUE</queue>
+         <versioning_id>-1309144248</versioning_id>
+      </row>
+   </general_attributes>
+   <scripts>
+      <row>
+         <process><![CDATA[
+!echo From the Prompt: &MY_ECHO#
+
+:SET &FROM_VARA# = GET_VAR(VARA.STATIC, "counter", "1")
+
+:SET &new_val# = ADD(&FROM_VARA#, 1)
+:PUT_VAR VARA.STATIC, "counter", &new_val#
+
+echo from vara object: "&FROM_VARA#"
+
+:SET &MY_VAR# = "per script"
+
+echo &MY_VAR#
+NAME="Zara Ali"
+
+:REGISTER_VARIABLE MY_RESULT#, $NAME]]></process>
+      </row>
+   </scripts>
+   <job_attributes>
+      <row>
+         <platform>UNIX</platform>
+         <agent>UNIX01</agent>
+         <login>LOGIN.ALL</login>
+         <job_report_path>2</job_report_path>
+         <priority>0</priority>
+         <unix_shell></unix_shell>
+         <unix_shell_options></unix_shell_options>
+         <unix_type></unix_type>
+         <unix_cmd></unix_cmd>
+      </row>
+   </job_attributes>
+   <object_variables>
+      <row>
+         <value>per defition</value>
+         <name>&amp;MY_VAR#</name>
+      </row>
+      <row>
+         <name>&amp;MY_VAR1#</name>
+      </row>
+   </object_variables>
+   <rollback_definitions>
+      <row>
+      </row>
+   </rollback_definitions>
+</jobs>

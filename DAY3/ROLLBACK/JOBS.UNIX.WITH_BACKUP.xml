@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>A</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <deactivation_delay>5</deactivation_delay>
+         <ert>1</ert>
+         <platform>UNIX</platform>
+         <last_runtimes>AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>JOBS.UNIX.WITH_BACKUP</name>
+         <type>JOBS</type>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>CLIENT_QUEUE</queue>
+         <rollback_enabled>1</rollback_enabled>
+         <versioning_id>384913454</versioning_id>
+      </row>
+   </general_attributes>
+   <scripts>
+      <row>
+         <process><![CDATA[
+
+echo "another line" >> /home/agent/200/my_file.txt
+
+cat /home/agent/200/my_file.txt | wc -l]]></process>
+      </row>
+   </scripts>
+   <job_attributes>
+      <row>
+         <platform>UNIX</platform>
+         <agent>UNIX01</agent>
+         <login>LOGIN.ALL</login>
+         <job_report_path>2</job_report_path>
+         <priority>0</priority>
+         <unix_shell></unix_shell>
+         <unix_shell_options></unix_shell_options>
+         <unix_type></unix_type>
+         <unix_cmd></unix_cmd>
+      </row>
+   </job_attributes>
+   <rollback_definitions>
+      <row>
+         <backup_path>/home/agent/200/</backup_path>
+         <include_sub_directories>1</include_sub_directories>
+      </row>
+   </rollback_definitions>
+</jobs>

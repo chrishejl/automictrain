@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<login>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>12.1</minimum_ae_version>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <name>LOGIN.ALL</name>
+         <type>LOGIN</type>
+         <versioning_id>-1305309596</versioning_id>
+      </row>
+   </general_attributes>
+   <logins>
+      <row>
+         <agent>WIN01</agent>
+         <login>agent</login>
+         <platform>WINDOWS</platform>
+         <olc_vault>AutomationEngine</olc_vault>
+      </row>
+      <row>
+         <agent>*</agent>
+         <login>agent</login>
+         <platform>UNIX</platform>
+         <olc_vault>AutomationEngine</olc_vault>
+      </row>
+   </logins>
+</login>

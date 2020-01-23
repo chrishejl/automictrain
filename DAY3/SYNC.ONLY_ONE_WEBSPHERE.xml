@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sync>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <is_inactive>1</is_inactive>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <name>SYNC.ONLY_ONE_WEBSPHERE</name>
+         <type>SYNC</type>
+         <versioning_id>273547726</versioning_id>
+      </row>
+   </general_attributes>
+   <state_definitions>
+      <row>
+         <state>FREE</state>
+      </row>
+      <row>
+         <state>LOCKED</state>
+      </row>
+   </state_definitions>
+   <action_definitions>
+      <row>
+         <action>LOCK</action>
+         <line_number>1</line_number>
+         <check_operator><![CDATA[< ]]></check_operator>
+         <set_operator>+ </set_operator>
+         <check_status>FREE</check_status>
+         <set_status>FREE</set_status>
+         <check_value>3</check_value>
+         <set_value>1</set_value>
+      </row>
+      <row>
+         <action>LOCK</action>
+         <line_number>2</line_number>
+         <check_operator>&gt;=</check_operator>
+         <set_operator>+ </set_operator>
+         <check_status>FREE</check_status>
+         <set_status>LOCKED</set_status>
+         <check_value>3</check_value>
+         <set_value>1</set_value>
+      </row>
+      <row>
+         <action>RELEASE</action>
+         <line_number>3</line_number>
+         <set_operator>- </set_operator>
+         <check_status>LOCKED</check_status>
+         <set_status>FREE</set_status>
+         <set_value>1</set_value>
+      </row>
+      <row>
+         <action>RELEASE</action>
+         <line_number>4</line_number>
+         <set_operator>- </set_operator>
+         <check_status>FREE</check_status>
+         <set_status>FREE</set_status>
+         <set_value>1</set_value>
+      </row>
+   </action_definitions>
+   <sync_states>
+      <row>
+         <status>FREE</status>
+      </row>
+   </sync_states>
+</sync>

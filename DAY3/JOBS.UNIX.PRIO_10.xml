@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>A</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>1</ert>
+         <platform>UNIX</platform>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>JOBS.UNIX.PRIO_10</name>
+         <has_output_filters>1</has_output_filters>
+         <type>JOBS</type>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>QUEUE.MAINTENANCE</queue>
+         <priority>10</priority>
+         <versioning_id>-1513019309</versioning_id>
+      </row>
+   </general_attributes>
+   <scripts>
+      <row>
+         <process><![CDATA[echo Hello World
+echo there seems to have been an error sucess
+sleep 25]]></process>
+      </row>
+   </scripts>
+   <sync_list>
+      <row>
+         <abend_action>RELEASE</abend_action>
+         <else_action>W</else_action>
+         <end_action>RELEASE</end_action>
+         <line_number>1</line_number>
+         <start_action>LOCK</start_action>
+         <sync_object>SYNC.ONLY_ONE_WEBSPHERE</sync_object>
+      </row>
+   </sync_list>
+   <job_attributes>
+      <row>
+         <platform>UNIX</platform>
+         <agent>UNIX02</agent>
+         <login>LOGIN.ALL</login>
+         <job_report_path>2</job_report_path>
+         <priority>0</priority>
+         <unix_shell></unix_shell>
+         <unix_shell_options></unix_shell_options>
+         <unix_type></unix_type>
+         <unix_cmd></unix_cmd>
+      </row>
+   </job_attributes>
+   <output_filter_definitions>
+      <row>
+         <filter_name>FILTER.OUTPUT.LOOK_FOR_ERROR</filter_name>
+         <line_number>1</line_number>
+         <result>1</result>
+         <retcode>2</retcode>
+         <message_insert>error found</message_insert>
+      </row>
+      <row>
+         <filter_name>FILTER.OUTPUT.LOOK_FOR_SUCCESS</filter_name>
+         <line_number>2</line_number>
+         <result>1</result>
+         <retcode>1</retcode>
+         <message_insert>sucess foun</message_insert>
+      </row>
+   </output_filter_definitions>
+   <external_output_files>
+      <row>
+         <file_full_path>/home/agent/101/sample.txt</file_full_path>
+         <line_number>1</line_number>
+         <require_login>1</require_login>
+      </row>
+   </external_output_files>
+   <rollback_definitions>
+      <row>
+      </row>
+   </rollback_definitions>
+</jobs>

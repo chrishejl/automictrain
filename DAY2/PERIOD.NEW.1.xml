@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<period>
+   <metadata>
+      <row>
+         <version>12.3.1</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <child_flags>0                               </child_flags>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <name>PERIOD.NEW.1</name>
+         <type>PERIOD</type>
+         <versioning_id>103988474</versioning_id>
+      </row>
+   </general_attributes>
+   <period_attributes>
+      <row>
+         <adjust>1</adjust>
+         <calendar_conditions>2</calendar_conditions>
+         <days_mode>W</days_mode>
+         <every>9</every>
+         <from_time>0800</from_time>
+         <max_runs>1</max_runs>
+         <once>1000</once>
+         <overlap>1</overlap>
+         <range_end>2020-01-21 00:00:00.0</range_end>
+         <range_mode>0</range_mode>
+         <range_start>2020-01-21 00:00:00.0</range_start>
+         <to_time>2359</to_time>
+         <weekdays>12345</weekdays>
+      </row>
+   </period_attributes>
+</period>
