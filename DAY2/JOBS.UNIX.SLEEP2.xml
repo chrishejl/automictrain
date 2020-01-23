@@ -20,6 +20,7 @@
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
+         <description>Whatever</description>
          <versioning_id>267917906</versioning_id>
       </row>
    </general_attributes>
