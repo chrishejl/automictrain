@@ -20,7 +20,9 @@
       <row>
          <is_active>1</is_active>
          <filter>*</filter>
-         <last_session>2020-01-23 16:27:29.0</last_session>
+         <first_name>Mr</first_name>
+         <last_name>Automic</last_name>
+         <last_session>2020-01-23 16:36:53.0</last_session>
          <privilege>17592185910783</privilege>
          <show_sys_messages>1</show_sys_messages>
          <valid_from>2000-01-01 00:00:00.0</valid_from>
