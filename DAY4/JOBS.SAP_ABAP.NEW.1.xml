@@ -31,20 +31,25 @@
          <job_class>C</job_class>
          <sap_job_delete>1</sap_job_delete>
          <sap_lang></sap_lang>
-         <job_name></job_name>
+         <job_name>ADS</job_name>
          <sap_dst_system></sap_dst_system>
          <sap_startmode>0</sap_startmode>
-         <sap_job_del_not_on_error></sap_job_del_not_on_error>
+         <sap_job_del_not_on_error>0</sap_job_del_not_on_error>
          <sap_recipient></sap_recipient>
          <sap_addresstype></sap_addresstype>
-         <sap_express></sap_express>
+         <sap_express>0</sap_express>
          <sap_copy>0</sap_copy>
          <sap_blindcopy>0</sap_blindcopy>
-         <sap_noforward></sap_noforward>
-         <sap_noprint></sap_noprint>
+         <sap_noforward>0</sap_noforward>
+         <sap_noprint>0</sap_noprint>
          <sap_deliver></sap_deliver>
          <sap_statusbymail></sap_statusbymail>
          <sap_job_type>0</sap_job_type>
+         <sap_override_login>0</sap_override_login>
       </row>
    </job_attributes>
+   <rollback_definitions>
+      <row>
+      </row>
+   </rollback_definitions>
 </jobs>
