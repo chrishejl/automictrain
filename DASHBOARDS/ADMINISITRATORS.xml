@@ -19,4 +19,23 @@
       <row>
       </row>
    </user_group_attributes>
+   <members>
+      <row>
+         <USERNAME>AUTOMIC/AUTOMIC</USERNAME>
+      </row>
+   </members>
+   <authorizations>
+      <row>
+         <auth_group>1</auth_group>
+         <filter_object_type>*</filter_object_type>
+         <filter_object_name>*</filter_object_name>
+         <filter_agent_name1>*</filter_agent_name1>
+         <filter_agent_name2>*</filter_agent_name2>
+         <filter_user_id1>*</filter_user_id1>
+         <filter_user_id2>*</filter_user_id2>
+         <filter_file_names1>*</filter_file_names1>
+         <filter_file_names2>*</filter_file_names2>
+         <line_number>1</line_number>
+      </row>
+   </authorizations>
 </usrg>
