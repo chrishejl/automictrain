@@ -67,7 +67,7 @@
       <row>
          <type>2</type>
          <name>uriOverride</name>
-         <value>sd</value>
+         <value>false</value>
       </row>
       <row>
          <type>2</type>
