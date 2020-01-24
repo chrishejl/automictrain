@@ -19,7 +19,8 @@
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <versioning_id>2005362192</versioning_id>
+         <description>Need this</description>
+         <versioning_id>2005362193</versioning_id>
       </row>
    </general_attributes>
    <job_attributes>
@@ -28,7 +29,6 @@
          <agent><![CDATA[<SQL>]]></agent>
          <job_report_path>2</job_report_path>
          <priority>0</priority>
-         <T>MSSQL</T>
          <database_name></database_name>
          <server_name></server_name>
          <sql_column_seperator>;</sql_column_seperator>
@@ -37,9 +37,9 @@
          <sql_max_rows>0</sql_max_rows>
          <sql_max_characters>50</sql_max_characters>
          <data_source></data_source>
-         <A></A>
          <sql_subst_character></sql_subst_character>
          <sql_remove_crlf>1</sql_remove_crlf>
+         <A></A>
       </row>
    </job_attributes>
    <rollback_definitions>
