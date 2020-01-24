@@ -33,18 +33,22 @@
 :SET &new_val# = ADD(&FROM_VARA#, 1)
 :PUT_VAR VARA.STATIC, "counter", &new_val#
 
-echo from vara object: "&FROM_VARA#"
+!echo from vara object: "&FROM_VARA#"
 
-:SET &MY_VAR# = "per script"
+
 
 echo &MY_VAR#
 NAME="Zara Ali"
 
 :REGISTER_VARIABLE MY_RESULT#, $NAME]]></process>
       </row>
+      <row>
+         <post_process>:PUBLISH &amp;MY_RESULT#, PUB_RESULT#</post_process>
+      </row>
    </scripts>
    <job_attributes>
       <row>
+         <activation_at_runtime>1</activation_at_runtime>
          <platform>UNIX</platform>
          <agent>UNIX01</agent>
          <login>LOGIN.ALL</login>
